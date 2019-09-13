@@ -1,0 +1,100 @@
+/*最顶端top图*/
+#top{
+    height:120px;
+    background: url("/static/images/shop/top_img.jpg");
+
+}
+
+/*顶端头部title条*/
+#title {
+    height: 30px;
+    /*background-color: aqua;*/
+
+
+}
+/*首页按钮*/
+#title_01 {
+    /*首页按钮向左浮动*/
+    float: left;
+    padding-right: 180px;
+}
+.title_a_01 {
+    color: red;
+}
+
+/*登陆按钮*/
+#title_02 {
+    /*登陆按钮向右浮动*/
+    float: right;
+}
+
+
+/*title部的按钮*/
+.title {
+    /*设置不占用整行*/
+    display: inline-block;
+
+
+}
+
+.title_a {
+    /*取消title部 a标签的超链接下划线*/
+    text-decoration: none;
+
+}
+
+#test {
+    /*用于加入新样式时先进行测试*/
+    float:right;
+}
+
+/*货架div*/
+#shelves {
+    width: auto;
+    height: auto;
+    /*background-color: yellow;*/
+    padding: 10px;
+    border: 2px black solid;
+    position: relative;
+    overflow: hidden;
+    zoom:1
+}
+
+/*货架内商品div*/
+.goods {
+    width: 300px;
+    height: 300px;
+    /*background-color: blue;*/
+    border:2px black solid;
+    margin: 20px;
+    float: left;
+    display: inline-block;
+
+}
+
+/*商品图片*/
+.goods_img {
+    height: 200px;
+    width:200px;
+    background: center;
+    background-size: 100%;
+    border: 2px black solid;
+    margin:0 auto;
+}
+
+/*商品名称*/
+.goods_name_a {
+
+    margin: 0 auto;
+
+}
+
+/*商品价格*/
+.goods_price {
+    display: block;
+}
+
+/*商品库存*/
+.stock {
+    display: block;
+}

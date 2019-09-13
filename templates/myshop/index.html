@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城首页首页</title>
+    <link href="/static/css/shop/mystyle.css" rel="stylesheet" type="text/css" charset="UTF-8"/>
+</head>
+
+<body style="padding: 0;margin: 0">
+<div id="top">
+</div>
+<div id="title">
+{# 顶部条 #}
+<div id="title_01" class="title">[<a class="title_a title_a_01" href="/shop" >首页</a>]</div>
+    {# 通过登陆条件判断现实登陆还是用户按钮 #}
+
+    {% if not is_login %}
+        <div id="test" class="title">[<a class="title_a title_a_01" href="/shop/login" >登陆</a>]</div>
+    {% else %}
+        <div id="title_02" class="title">[<a class="title_a" href="/shop/">用户</a>][<a class="title_a" href="/shop/cart">购物车</a>]</div>
+    {% endif %}
+<div id="title_03" class="title">[<a class="title_a" href="/shop/kind" >分类</a>]</div>
+
+</div>
+<div id="shelves">
+{#    创建商品格的测试代码#}
+{#    <div class="goods">#}
+{#        <div class="goods_img">#}
+{##}
+{#        </div>#}
+{#            <div class="good_name">#}
+{#                <a href="/shop/login" class="goods_name_a">1111111</a>#}
+{#                <div class="goods_price">123123</div>#}
+{##}
+{#            </div>#}
+{#    </div>#}
+
+
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="/static/js/main.js" charset="UTF-8"></script>
+<script>
+    var test = ({{ good|safe }});
+
+    console.log(test);
+    for (let i=1;i<=12;i++){
+        console.log(i);
+        make_good_div(test[i]);
+    }
+    {#make_good_div(test['1']);#}
+
+    {#var nametest = {{ testmsg|safe }} ;#}
+    {#var namelist = {{ goodname|safe }};#}
+    {#for (var name of namelist){#}
+    {#    make_good_div(name);#}
+    {#make_good_div(nametest);#}
+    {#var testdict = {'e':{'d':2}};#}
+    {#console.log(testdict)#}
+</script>
+</html>
